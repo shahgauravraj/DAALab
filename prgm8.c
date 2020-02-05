@@ -4,7 +4,7 @@
 #include<time.h>
 #include<stdlib.h>
 
-void insertionsort(int a[], int);
+void insertionsort(int [], int);
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
 	scanf("%d", &n);
 
 	for(i = 0; i < n; i++)
-		a[i]=rand()%100;
+		num[i]=rand()%100;
 	
 	printf("Customers' contact numbers are:\n");
   	for(i = 0; i < n; i++)
@@ -41,7 +41,7 @@ void insertionsort(int num[], int n)
 	int i,t,j,flag=0;
   	for(i=0;i<n;i++)
  	{
-    	t=a[i];
+    	t=num[i];
    		for(j=i-1;j>=0;j--)
    		{
      		if(num[j]>t) 

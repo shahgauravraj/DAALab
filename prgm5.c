@@ -1,9 +1,10 @@
 //bubble sort
 #include<stdio.h>
 #include<time.h>
-main()
+#include<stdlib.h>
+void main()
 {
-    int i,n,temp,j,a[10],key;
+    int i,n,temp,j,a[10000],key;
     double clk;
     clock_t starttime,endtime;
     printf("Enter the seat capacity of theatre\n");

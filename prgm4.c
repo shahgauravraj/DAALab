@@ -3,7 +3,7 @@
 #include<stdlib.h>
 int main()
 {
-    int i,a[10],key;
+    int i,a[10000],key;
     int n;
     double clk;
     clock_t starttime, endtime;
@@ -12,10 +12,11 @@ int main()
     scanf("%d",&n);
 
     for(i=0;i<n;i++)
-    a[i]=rand()%100; //to get 2 digit numbers
+        a[i]=rand()%100; //to get 2 digit numbers
+
     printf("\nThe medicine IDs are: \n");
     for(i=0;i<n;i++)
-    printf("%d\t",a[i]);
+        printf("%d\t",a[i]);
 
     printf("\nEnter the medicine ID to search\n");
     scanf("%d",&key);
